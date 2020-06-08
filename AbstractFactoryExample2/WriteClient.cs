@@ -15,11 +15,9 @@ namespace AbstractFactoryExample2
             classProduct = factory.CreateProduct();
         }
 
-        public string GetCode()
+        public string GetCode(string name)
         {
-            if(classProduct.GetType()==typeof(CodeWriterStruct))
-                return classProduct.Generate("Struct");
-            return classProduct.Generate("Class");
+            return classProduct.Generate(name);
         }
     }
 }
