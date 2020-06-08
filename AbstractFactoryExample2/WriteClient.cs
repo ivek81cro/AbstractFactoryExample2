@@ -19,7 +19,7 @@ namespace AbstractFactoryExample2
         {
             if(classProduct.GetType()==typeof(CodeWriterStruct))
                 return classProduct.Generate("Struct");
-            return classProduct.Generate("Klasa");
+            return classProduct.Generate("Class");
         }
     }
 }
